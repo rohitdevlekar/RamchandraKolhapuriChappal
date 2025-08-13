@@ -1,217 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramchandra Kolhapuri Chappal</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fff8f0;
-            color: #333;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramchandra Kolhapuri Chappal</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        header {
-            background-color: #8b4d2b;
-            color: white;
-            padding: 20px 10px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-            font-family: 'Georgia', serif;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #a55f34;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 15px;
-            margin: 0 5px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        nav a:hover {
-            background-color: #8b4d2b;
-        }
-
-        .hero {
-            background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Kolhapuri_chappal.jpg') center/cover;
-            height: 220;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
-            font-size: 2em;
-        }
-
-        .hero-text {
-            font-size: 2.5em;
-            font-family: 'Georgia', serif;
-            background: linear-gradient(90deg, #edc070, #b27133, #5c2608);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 10px rgba(80, 40, 10, 0.2);
-            border-radius: 8px;
-            padding: 10px 24px;
-            box-shadow: 0 2px 10px rgba(140, 80, 10, 0.07);
-        }
-
-        .section {
-            padding: 20px 10px;
-            text-align: center;
-        }
-
-        .section h2 {
-            margin-bottom: 8px;
-            color: #8b4d2b;
-        }
-
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .product-card:hover {
-            transform: scale(1.03);
-        }
-
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .product-card h3 {
-            margin: 10px;
-        }
-
-        .product-card p {
-            margin: 10px;
-            color: #555;
-        }
-
-        footer {
-            background-color: #8b4d2b;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .logo {
-            height: 60px;
-            /* Or adjust as you like */
-            width: auto;
-        }
-
-        .logo-text h1 {
-            margin: 0;
-            font-size: 2em;
-            font-family: 'Georgia', serif;
-        }
-
-        .logo-text p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-    </style>
+  <style>
+    body {
+      background-color: #fff8f0;
+      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 80px ;
+    }
+    .navbar {
+      background-color: #8b4d2b;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      background-color: #a55f34;
+      border-radius: 4px;
+    }
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Kolhapuri_chappal.jpg') center/cover;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-text {
+      font-size: 2em;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(90deg, #edc070, #b27133, #5c2608);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(80, 40, 10, 0.2);
+    }
+    h2 {
+      color: #8b4d2b;
+    }
+    .product-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      background: #fff;
+    }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      background-color: #8b4d2b;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
-
 <body>
 
-<header>
-  <div class="logo-container">
-    <img src="./Images/logo.png" alt="Ramchandra Kolhapuri Logo" class="logo">
-    <div class="logo-text">
-      <h1>Ramchandra Kolhapuri Chappal</h1>
-      <p>Traditional Elegance, Handmade with Love</p>
+<!-- Header/Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="./Images/logo-badge.png" alt="Logo" height="50" class="me-2">
+      <span>Ramchandra Kolhapuri Chappal</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
   </div>
-</header>
+</nav>
 
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-text">
+    Exquisite Kolhapuri Chappals for Every Occasion
+  </div>
+</section>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section class="hero-text" id="home">
-        Exquisite Kolhapuri Chappals for Every Occasion
-    </section>
-
-    <section class="section" id="products">
-        <h2>Our Collection</h2>
-        <div class="products">
-            <div class="product-card">
-                <img src="./Images/1.webp" alt="Classic Kolhapuri">
-                <h3>Classic Brown</h3>
-                <p>₹1200 - Handmade pure leather, traditional design.</p>
-            </div>
-            <div class="product-card">
-                <img src="./Images/2.webp" alt="Designer Kolhapuri">
-                <h3>Designer Cut</h3>
-                <p>₹1500 - Intricate patterns for special occasions.</p>
-            </div>
-            <div class="product-card">
-                <img src="./Images/3.webp" alt="Comfort Fit">
-                <h3>Comfort Fit</h3>
-                <p>₹1000 - Soft sole with elegant design.</p>
-            </div>
+<!-- Products -->
+<section class="py-4" id="products">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Collection</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-md-4">
+        <div class="product-card">
+          <img src="./Images/1.webp" class="img-fluid" alt="Classic Kolhapuri">
+          <div class="p-3">
+            <h3>Classic Brown</h3>
+            <p>₹1200 - Handmade pure leather, traditional design.</p>
+          </div>
         </div>
-    </section>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="product-card">
+          <img src="./Images/2.webp" class="img-fluid" alt="Designer Kolhapuri">
+          <div class="p-3">
+            <h3>Designer Cut</h3>
+            <p>₹1500 - Intricate patterns for special occasions.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="product-card">
+          <img src="./Images/3.webp" class="img-fluid" alt="Comfort Fit">
+          <div class="p-3">
+            <h3>Comfort Fit</h3>
+            <p>₹1000 - Soft sole with elegant design.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="section" id="about">
-        <h2>About Us</h2>
-        <p>Ramchandra Kolhapuri Chappal has been serving customers for over 25 years, bringing authentic handmade
-            chappals straight from the artisans of Kolhapur. Our mission is to preserve this timeless art while
-            providing
-            unmatched comfort and quality.</p>
-    </section>
+<!-- About -->
+<section class="py-4" id="about">
+  <div class="container text-center">
+    <h2>About Us</h2>
+    <p>Ramchandra Kolhapuri Chappal has been serving customers for over 25 years, bringing authentic handmade
+      chappals straight from the artisans of Kolhapur. Our mission is to preserve this timeless art while
+      providing unmatched comfort and quality.</p>
+  </div>
+</section>
 
-    <section class="section" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <strong>info@ramchandrakolhapuri.com</strong></p>
-        <p>Phone: <strong>+91-9876543210</strong></p>
-        <p>Address: Main Road, Kolhapur, Maharashtra</p>
-    </section>
+<!-- Contact -->
+<section class="py-4" id="contact">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Email: <strong>ramchandrakolhapurichappal@gmail.com</strong></p>
+    <p>Phone: <strong>+91-8080009697</strong></p>
+    <p>Address: Main Road, Kolhapur, Maharashtra</p>
+  </div>
+</section>
 
-    <footer>
-        &copy; 2025 Ramchandra Kolhapuri Chappal. All rights reserved.
-    </footer>
+<!-- Footer -->
+<footer>
+  &copy; 2025 Ramchandra Kolhapuri Chappal. All rights reserved.
+</footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
