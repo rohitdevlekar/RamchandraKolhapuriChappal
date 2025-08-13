@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramchandra Kolhapuri Chappal</title>
-  
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -13,7 +13,7 @@
       background-color: #fff8f0;
       color: #333;
       font-family: 'Segoe UI', sans-serif;
-      padding-top: 80px ;
+      padding-top: 80px;
     }
     .navbar {
       background-color: #8b4d2b;
@@ -64,6 +64,16 @@
       padding: 15px;
       margin-top: 20px;
     }
+    /* Fix for carousel control buttons visibility */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1) grayscale(100);
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 60% 60%;
+    }
   </style>
 </head>
 <body>
@@ -72,7 +82,7 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="./Images/logo-badge.png" alt="Logo" height="50" class="me-2">
+      <img src="./Images/logo/download (2).png" alt="Logo" class="img-fluid me-2" style="max-height: 50px;">
       <span>Ramchandra Kolhapuri Chappal</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -101,36 +111,163 @@
   <div class="container text-center">
     <h2 class="mb-4">Our Collection</h2>
     <div class="row g-4">
+
+      <!-- Product 1 -->
       <div class="col-sm-6 col-md-4">
         <div class="product-card">
           <img src="./Images/1.webp" class="img-fluid" alt="Classic Kolhapuri">
           <div class="p-3">
             <h3>Classic Brown</h3>
             <p>₹1200 - Handmade pure leather, traditional design.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product1Modal">View Details</button>
           </div>
         </div>
       </div>
+
+      <!-- Product 2 -->
       <div class="col-sm-6 col-md-4">
         <div class="product-card">
           <img src="./Images/2.webp" class="img-fluid" alt="Designer Kolhapuri">
           <div class="p-3">
             <h3>Designer Cut</h3>
             <p>₹1500 - Intricate patterns for special occasions.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product2Modal">View Details</button>
           </div>
         </div>
       </div>
+
+      <!-- Product 3 -->
       <div class="col-sm-6 col-md-4">
         <div class="product-card">
           <img src="./Images/3.webp" class="img-fluid" alt="Comfort Fit">
           <div class="p-3">
             <h3>Comfort Fit</h3>
             <p>₹1000 - Soft sole with elegant design.</p>
+            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product3Modal">View Details</button>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+<!-- Product 1 Modal -->
+<div class="modal fade" id="product1Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Classic Brown</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselProduct1" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/1.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/1_2.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/1_3.webp" class="d-block w-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <ul class="list-group text-start">
+          <li class="list-group-item"><strong>Material:</strong> Pure leather</li>
+          <li class="list-group-item"><strong>Color:</strong> Classic Brown</li>
+          <li class="list-group-item"><strong>Sizes:</strong> 6, 7, 8, 9, 10</li>
+          <li class="list-group-item"><strong>Price:</strong> ₹1200</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 2 Modal -->
+<div class="modal fade" id="product2Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Designer Cut</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselProduct2" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/2.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/2_2.webp" class="d-block w-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <ul class="list-group text-start">
+          <li class="list-group-item"><strong>Material:</strong> Premium leather</li>
+          <li class="list-group-item"><strong>Color:</strong> Tan with designer cuts</li>
+          <li class="list-group-item"><strong>Sizes:</strong> 6, 7, 8, 9</li>
+          <li class="list-group-item"><strong>Price:</strong> ₹1500</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Product 3 Modal -->
+<div class="modal fade" id="product3Modal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Comfort Fit</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselProduct3" class="carousel slide mb-3" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Images/3.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+              <img src="./Images/3_2.webp" class="d-block w-100" alt="">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduct3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProduct3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <ul class="list-group text-start">
+          <li class="list-group-item"><strong>Material:</strong> Soft sole leather</li>
+          <li class="list-group-item"><strong>Color:</strong> Beige</li>
+          <li class="list-group-item"><strong>Sizes:</strong> 6, 7, 8, 9, 10, 11</li>
+          <li class="list-group-item"><strong>Price:</strong> ₹1000</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- About -->
 <section class="py-4" id="about">
