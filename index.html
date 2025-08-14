@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-IN">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +26,10 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet">
+
 
   <style>
     body {
@@ -33,17 +38,32 @@
       font-family: 'Segoe UI', sans-serif;
       padding-top: 80px;
     }
+
     .navbar {
       background-color: #8b4d2b;
     }
+
     .navbar-brand,
     .navbar-nav .nav-link {
-      color: #fff !important;
+      color: #d4af37 !important;
+      /* gold shade */
+      font-family: 'Cinzel', serif;
+      /* or 'Playfair Display' */
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+
     }
+
     .navbar-nav .nav-link:hover {
       background-color: #a55f34;
       border-radius: 4px;
+      color: #fff8dc !important;
+      /* light cream on hover */
+      background-color: transparent;
     }
+
     .hero {
       background: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Kolhapuri_chappal.jpg') center/cover;
       height: 120px;
@@ -52,6 +72,7 @@
       justify-content: center;
       text-align: center;
     }
+
     .hero-text {
       font-size: 2em;
       font-family: 'Georgia', serif;
@@ -62,19 +83,23 @@
       letter-spacing: 2px;
       text-shadow: 2px 2px 10px rgba(80, 40, 10, 0.2);
     }
+
     h2 {
       color: #8b4d2b;
     }
+
     .product-card {
       border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
       background: #fff;
     }
+
     .product-card:hover {
       transform: scale(1.03);
     }
+
     footer {
       background-color: #8b4d2b;
       color: white;
@@ -82,6 +107,7 @@
       padding: 15px;
       margin-top: 20px;
     }
+
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       filter: invert(1) grayscale(100);
@@ -99,7 +125,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="https://ramchandra-kolhapuri-chappal.vercel.app">
-        <img src="./Images/logo/logo.png" alt="Ramchandra Kolhapuri Chappal Logo" class="img-fluid" style="max-height: 100px;">
+        <img src="./Images/logo/logo.png" alt="Ramchandra Kolhapuri Chappal Logo" class="img-fluid"
+          style="max-height: 100px;">
         <span>Ramchandra Kolhapuri Chappal</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -135,7 +162,8 @@
             <div class="p-3">
               <h3>Classic Brown</h3>
               <p>₹1200 - Handmade pure leather, traditional design.</p>
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product1Modal">View Details</button>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product1Modal">View
+                Details</button>
             </div>
           </div>
         </div>
@@ -146,7 +174,8 @@
             <div class="p-3">
               <h3>Designer Cut</h3>
               <p>₹1500 - Intricate patterns for special occasions.</p>
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product2Modal">View Details</button>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product2Modal">View
+                Details</button>
             </div>
           </div>
         </div>
@@ -157,7 +186,8 @@
             <div class="p-3">
               <h3>Comfort Fit</h3>
               <p>₹1000 - Soft sole with elegant design.</p>
-              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product3Modal">View Details</button>
+              <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#product3Modal">View
+                Details</button>
             </div>
           </div>
         </div>
@@ -287,10 +317,17 @@
   <section class="py-4" id="about">
     <div class="container text-center">
       <h2>About Us</h2>
-      <p>Ramchandra Kolhapuri Chappal has been serving customers for over 25 years, bringing authentic handmade chappals straight from the artisans of Kolhapur. Our mission is to preserve this timeless art while providing unmatched comfort and quality.</p>
-      <p>Discover traditional <strong>Kolhapuri chappals</strong> handcrafted in the heart of <strong>Kolhapur, Maharashtra</strong>. Made from genuine leather and crafted by skilled artisans, our footwear reflects the rich heritage of local craftsmanship.</p>
-      <p>As a proud <strong>Marathi entrepreneur</strong>, our mission is to preserve our cultural legacy and support <strong>local business</strong> through sustainable handcraft practices.</p>
-      <p>Every pair of <em>Kolhapuri chappals</em> is a symbol of tradition, quality, and comfort. Explore our unique collection today!</p>
+      <p>Ramchandra Kolhapuri Chappal has been serving customers for over 25 years, bringing authentic handmade chappals
+        straight from the artisans of Kolhapur. Our mission is to preserve this timeless art while providing unmatched
+        comfort and quality.</p>
+      <p>Discover traditional <strong>Kolhapuri chappals</strong> handcrafted in the heart of <strong>Kolhapur,
+          Maharashtra</strong>. Made from genuine leather and crafted by skilled artisans, our footwear reflects the
+        rich heritage of local craftsmanship.</p>
+      <p>As a proud <strong>Marathi entrepreneur</strong>, our mission is to preserve our cultural legacy and support
+        <strong>local business</strong> through sustainable handcraft practices.
+      </p>
+      <p>Every pair of <em>Kolhapuri chappals</em> is a symbol of tradition, quality, and comfort. Explore our unique
+        collection today!</p>
     </div>
   </section>
 
@@ -307,12 +344,7 @@
         <div class="col-md-6 text-center">
           <h2>Location</h2>
           <div style="width:100%;height:300px;">
-            <iframe
-              width="100%"
-              height="300"
-              style="border:0"
-              allowfullscreen
-              loading="lazy"
+            <iframe width="100%" height="300" style="border:0" allowfullscreen loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://www.google.com/maps?q=16.692378266292838,74.24832261715768&z=16&output=embed">
             </iframe>
@@ -325,10 +357,11 @@
   <!-- Footer -->
   <footer>
     &copy; 2025 Ramchandra Kolhapuri Chappal. All rights reserved.
-    <br/> Developed by Rahul Devlekar
+    <br /> Developed by Rahul Devlekar
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
